@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terminal de Clases - Portafolio C++</title>
+
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/repositorios.css">
+</head>
+
+<body class="codigo-page">
+<!-- Navegacion superior -->
+<header class="site-header">
+    <div class="nav-container">
+      <a href="karen.html" class="logo">Karen // <span>Portafolio</span></a>
+    
+      <nav class="nav-links">
+        <a href="karen.html" class="nav-link">← Volver al Inicio</a>
+    </nav>
+    </div>
+</header>
+
+<!--  menu de navegacion de karen.html -->
+<nav class="nav-links">
+  <a href="karen.html" class="nav-link">Inicio</a>
+  <a href="info.html" class="nav-link">Sobre Mí</a>
+  <a href="repositoriosJava.html" class="nav-link active">Códigos Java</a>
+  <a href="repositoriosC++.html" class="nav-link active">Códigos C++</a> <!-- Enlace a la nueva pagina -->
+</nav>
+
+<!-- Contenedor Principal de la Terminal -->
+<main class="terminal-main-container">
+    <div class="section-header">
+	<h2 class="section-title">Repositorio de Clases C++</h2>
+    <div class="title-line"></div>
+    <p class="section-subtitle">Selecciona un módulo del sistema para visualizar la estructura del código en tiempo real.</p>
+    </div>
+
+    <div class="terminal-container">
+      <!-- Barra superior de la terminal -->
+      <div class="terminal-bar">
+        <div class="window-buttons">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-title">TERM // C++ CLASSES - v2.4.1</div>
+        <div class="terminal-status">CONNECTED</div>
+      </div>
+
+      <!-- Cuerpo de la Terminal -->
+      <div class="terminal-body">
+        <!-- Panel lateral para cambiar entre clases -->
+<div class="terminal-sidebar">
+    <span class="sidebar-header">MODULOS C++</span>
+    <button class="snippet-btn active" onclick="loadSnippet(0)">01_Recaman.cpp</button>
+    <button class="snippet-btn" onclick="loadSnippet(1)">02_Padovan.cpp</button>
+    <button class="snippet-btn" onclick="loadSnippet(2)">03_Binario.cpp</button>
+    <button class="snippet-btn" onclick="loadSnippet(3)">04_FibonacciTrib.cpp</button>
+</div>
+
+        <!-- Pantalla de codigo con efecto robotico -->
+        <div class="terminal-screen">
+          <!-- 💡 Panel de Descripción Dinámica del Módulo -->
+        <div class="code-info-panel">
+          <span class="info-badge">INFO</span>
+          <p id="code-description">Cargando descripción del algoritmo...</p>
+        </div>
+        
+          <pre><code id="code-target"></code><span class="typing-cursor"></span></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- AQUi AGREGAMOS LA NUEVA CONSOLA DE SALIDA ABAJO DEL RECUADRO  -->
+        <div class="terminal-output-container">
+            <div class="output-bar">
+                <div class="window-buttons">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">CONSOLA // EXECUTION OUTPUT</div>
+                <div class="terminal-status">READY</div>
+            </div>
+            <div class="output-body">
+                <pre><code id="output-target">&gt; Esperando ejecución del módulo...</code></pre>
+            </div>
+        </div>
+<!--  Sección de Guía de Usuario y Compiladores en Línea -->
+<div class="compiler-guide-card">
+    <div class="guide-header">
+        <span class="guide-badge">GUÍA TÉCNICA & RECOMENDACIONES</span>
+    </div>
+    <div class="guide-body">
+        <p><strong>⚠️ Nota de Validación:</strong> Los algoritmos interactivos están diseñados para recibir los tipos de dato correctos (enteros o flotantes según se soliciten). Introducir caracteres alfabéticos o valores fuera de rango en las funciones de lectura podría interrumpir el flujo de la simulación estándar.</p>
+        <p><strong>🚀 ¿Quieres probarlo en tiempo real?</strong> Puedes copiar cualquier fragmento de código de arriba y ejecutarlo directamente en los siguientes entornos de compilación en la nube:</p>
+        <div class="compiler-links">
+            <a href="https://www.onlinegdb.com/" target="_blank" class="compiler-btn">🌐 OnlineGDB (C++ / Java)</a>
+            <a href="https://www.programiz.com/" target="_blank" class="compiler-btn">💻 Programiz Compiler</a>
+            <a href="https://www.jdoodle.com/" target="_blank" class="compiler-btn">⚡ JDoodle Sandbox</a>
+        </div>
+    </div>
+</div>
+
+  </main>
+<!-- FOOTER DEL PORTAFOLIO -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2026 - Portafolio Académico de Programación III</p>
+      <div class="footer-links">
+        <a href="karen.html" class="footer-link">Inicio</a>
+        <a href="info.html" class="footer-link">Sobre Mí</a>
+        
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- Script independiente para esta vista -->
+<script src="../js/repositorioC++.js"></script>
+</body>
+</html>
